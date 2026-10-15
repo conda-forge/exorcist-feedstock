@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: exorcist
-  version: 0.1.0
+  version: "0.1.1"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://github.com/OpenFreeEnergy/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 18a4016938dc3e10897a423e38af3789e52f0333946cee1eaa038457b9ba9b17
+  url: https://files.pythonhosted.org/packages/source/e/exorcist/exorcist-${{ version }}.tar.gz
+  sha256: a902666e578d5b31c1c75296b56682d191932d14b967324f097ee463ec62ee9b
   # you can get the sha256 checksum with:  `openssl sha256 <file name>`,
   # or, in one go without keeping the file with: `curl -L <url> | sha256`
   # (you may need the packages or openssl and/or curl)
@@ -37,7 +37,7 @@ tests:
   # Some packages might need a `test/commands` key to check CLI.
   - python:
       imports:
-      - exorcist
+        - exorcist
       pip_check: true  # run `pip check` to verify the integrity
       python_version:
         - ${{ python_min }}.*
