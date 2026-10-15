@@ -9,7 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/e/exorcist/exorcist-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/e/exorcist/exorcist-${{ version }}.tar.gz
   sha256: a902666e578d5b31c1c75296b56682d191932d14b967324f097ee463ec62ee9b
   # you can get the sha256 checksum with:  `openssl sha256 <file name>`,
   # or, in one go without keeping the file with: `curl -L <url> | sha256`
